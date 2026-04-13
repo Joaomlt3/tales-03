@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comissão</title>
+</head>
+<body>
+    <script>
+
+        var totalVendas = 0
+
+       
+        var nome1 = prompt("Digite o nome do corretor 1:")
+        var venda1 = parseFloat(prompt("Digite o valor de vendas de " + nome1 + ":"))
+
+        var comissao1 = 0
+        if (venda1 > 50000) {
+            comissao1 = venda1 * 0.12
+        } else if (venda1 >= 30000) {
+            comissao1 = venda1 * 0.095
+        } else {
+            comissao1 = venda1 * 0.07
+        }
+
+        document.write("Nome: " + nome1 + "<br>")
+        document.write("Vendas: R$ " + venda1 + "<br>")
+        document.write("Comissão: R$ " + comissao1 + "<br><br>")
+
+        totalVendas = totalVendas + venda1
+
+
+      
+        var nome2 = prompt("Digite o nome do corretor 2:")
+        var venda2 = parseFloat(prompt("Digite o valor de vendas de " + nome2 + ":"))
+
+        var comissao2 = 0
+        if (venda2 > 50000) {
+            comissao2 = venda2 * 0.12
+        } else if (venda2 >= 30000) {
+            comissao2 = venda2 * 0.095
+        } else {
+            comissao2 = venda2 * 0.07
+        }
+
+        document.write("Nome: " + nome2 + "<br>")
+        document.write("Vendas: R$ " + venda2 + "<br>")
+        document.write("Comissão: R$ " + comissao2 + "<br><br>")
+
+        totalVendas = totalVendas + venda2
+
+
+        var nome3 = prompt("Digite o nome do corretor 3:")
+        var venda3 = parseFloat(prompt("Digite o valor de vendas de " + nome3 + ":"))
+
+        var comissao3 = 0
+        if (venda3 > 50000) {
+            comissao3 = venda3 * 0.12
+        } else if (venda3 >= 30000) {
+            comissao3 = venda3 * 0.095
+        } else {
+            comissao3 = venda3 * 0.07
+        }
+
+        document.write("Nome: " + nome3 + "<br>")
+        document.write("Vendas: R$ " + venda3 + "<br>")
+        document.write("Comissão: R$ " + comissao3 + "<br><br>")
+
+        totalVendas = totalVendas + venda3
+
+
+        
+        document.write("Total de vendas da empresa: R$ " + totalVendas)
+
+    </script>
+</body>
+</html>

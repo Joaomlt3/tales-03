@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra de peças</title>
+</head>
+<body>
+    <script>
+
+        var cliente = prompt("Digite o nome do cliente:")
+
+        var precoParafuso = parseFloat(prompt("Digite o preço do parafuso:"))
+        var precoPorca = parseFloat(prompt("Digite o preço da porca:"))
+        var precoArruela = parseFloat(prompt("Digite o preço da arruela:"))
+
+        var qtdParafuso = parseInt(prompt("Quantidade de parafusos:"))
+        var qtdPorca = parseInt(prompt("Quantidade de porcas:"))
+        var qtdArruela = parseInt(prompt("Quantidade de arruelas:"))
+
+        var totalParafuso = precoParafuso * qtdParafuso
+        var totalPorca = precoPorca * qtdPorca
+        var totalArruela = precoArruela * qtdArruela
+
+       
+        var descParafuso = totalParafuso * 0.20
+        var descPorca = totalPorca * 0.10
+        var descArruela = totalArruela * 0.30
+
+        var totalDesconto = descParafuso + descPorca + descArruela
+
+        var totalCompra = (totalParafuso + totalPorca + totalArruela) - totalDesconto
+
+        document.write("Cliente: " + cliente + "<br><br>")
+
+        document.write("Parafusos: " + qtdParafuso + "<br>")
+        document.write("Porcas: " + qtdPorca + "<br>")
+        document.write("Arruelas: " + qtdArruela + "<br><br>")
+
+        document.write("Total desconto: R$ " + totalDesconto + "<br>")
+        document.write("Total a pagar: R$ " + totalCompra)
+
+    </script>
+</body>
+</html>
