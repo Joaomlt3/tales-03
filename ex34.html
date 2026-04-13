@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ordem Crescente</title>
+</head>
+<body>
+    <script>
+        var a = parseFloat(prompt("Digite o primeiro valor:"));
+        var b = parseFloat(prompt("Digite o segundo valor:"));
+        var c = parseFloat(prompt("Digite o terceiro valor:"));
+
+        if (a <= b && a <= c) {
+            if (b <= c) {
+                document.write(a + ", " + b + ", " + c);
+            } else {
+                document.write(a + ", " + c + ", " + b);
+            }
+        } else if (b <= a && b <= c) {
+            if (a <= c) {
+                document.write(b + ", " + a + ", " + c);
+            } else {
+                document.write(b + ", " + c + ", " + a);
+            }
+        } else {
+            if (a <= b) {
+                document.write(c + ", " + a + ", " + b);
+            } else {
+                document.write(c + ", " + b + ", " + a);
+            }
+        }
+    </script>
+</body>
+</html>
