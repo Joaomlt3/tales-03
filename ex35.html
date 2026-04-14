@@ -3,29 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vestibulinho </title>
+    <title>Document</title>
 </head>
 <body>
     <script>
-        var nome = prompt("Digite o nome do candidato:")
-        var portugues = parseFloat(prompt("Digite a nota de Português:"))
-        var matematica = parseFloat(prompt("Digite a nota de Matemática:"))
-        var conhecimentos = parseFloat(prompt("Digite a nota de Conhecimentos Gerais:"))
+        var a = parseFloat(prompt("Digite seu nome "))
+        var b = parseFloat(prompt("Digite a nota de matematica:"))
+        var c = parseFloat(prompt("Digite a nota de portugues :"))
+        var d = parseFloat(prompt("Digite a nota de conceitos gerais:"))
 
-        document.write("Nome: " + nome + "<br>")
-        document.write("Português: " + portugues + "<br>")
-        document.write("Matemática: " + matematica + "<br>")
-        document.write("Conhecimentos Gerais: " + conhecimentos + "<br>")
-
-        
-        var media = (portugues + matematica + conhecimentos) / 3
-        document.write("Média: " + media + "<br>")
-
-        if (media > 7 && portugues >= 5 && matematica >= 5 && conhecimentos >= 5){
-            document.write("Situação: Aprovado")
-        } else {
-            document.write("Situação: Reprovado")
+        if (b >= 7, c >= 7, d >= 7){
+            document.write("aluno aprovado")
         }
+         if (b < 7, c < 7, d < 7){
+            document.write("aluno reprovado")
+         }
     </script>
 </body>
-</html>
+</html>+*

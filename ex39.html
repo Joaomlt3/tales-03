@@ -6,28 +6,20 @@
 </head>
 <body>
     <script>
-
-        var compra = parseFloat(prompt("Digite o valor da compra:"))
-        var pago = parseFloat(prompt("Digite o valor pago:"))
-
-        var troco = pago - compra
-
-        document.write("Valor da compra: R$ " + compra + "<br>")
-        document.write("Valor pago: R$ " + pago + "<br>")
-        document.write("Troco: R$ " + troco + "<br><br>")
-
-        var notas100 = parseInt(troco / 100)
-        troco = troco % 100
-
-        var notas10 = parseInt(troco / 10)
-        troco = troco % 10
-
-        var notas1 = parseInt(troco)
-
-        document.write("Notas de 100: " + notas100 + "<br>")
-        document.write("Notas de 10: " + notas10 + "<br>")
-        document.write("Notas de 1: " + notas1)
-
-    </script>
+     var valor = parseInt(prompt("digite o valor da compra"))
+     var valorpago= parseInt(prompt("digite o valor pago"))
+     var troco = valorpago - valor
+     document.write("valor de compra:"+valor + "<br>")
+     document.write("valor de troco" + troco + "<br>")
+     if (troco > 99){
+        document.write("o troco sera com a nota de 100")
+     }
+     if (troco >= 10 , troco < 100) {
+        document.write("o troco sera com a nota de 10" + "<br>")
+     }
+     if (troco < 10){
+        document.write ("o troco sera com a nota de 1 " + "<br>")
+     }
+     </script>
 </body>
 </html>

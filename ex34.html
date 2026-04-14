@@ -1,34 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ordem </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
     <script>
-        var a = parseFloat(prompt("Digite o primeiro valor:"));
-        var b = parseFloat(prompt("Digite o segundo valor:"));
-        var c = parseFloat(prompt("Digite o terceiro valor:"));
-
-        if (a <= b && a <= c) {
-            if (b <= c) {
-                document.write(a + ", " + b + ", " + c);
-            } else {
-                document.write(a + ", " + c + ", " + b);
-            }
-        } else if (b <= a && b <= c) {
-            if (a <= c) {
-                document.write(b + ", " + a + ", " + c);
-            } else {
-                document.write(b + ", " + c + ", " + a);
-            }
-        } else {
-            if (a <= b) {
-                document.write(c + ", " + a + ", " + b);
-            } else {
-                document.write(c + ", " + b + ", " + a);
-            }
+        var a = parseFloat(prompt("este e o primeiro valor:"))
+        var b = parseFloat(prompt("Esta e o segundo valor:"))
+        var c = parseFloat(prompt("Este e o terceiro valor:"))
+        
+        if(a > b){
+        document.write("o valor de a:"+a+ "<br>")
         }
+        else if (b > c){
+         document.write("o valor de b:"+b+ "<br>")
+        }
+        else{
+        document.write("o valor de c:"+c+ "<br>")
+        }
+            
+
+        
+
+        
     </script>
 </body>
 </html>
